@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
+:root{
+    --first-color:white;
+    --second-color: red;
+    --third-color: #000000da;
+    --four-color: #ffbc0d;
+    --five-color: black;
+    --six-color: grey;
+    --six-color: #767676;
 
+}
 *{
     padding: 0;
     margin: 0;
@@ -19,7 +28,7 @@ header{
     top: 0;
     left: 0;
     height: 6.56rem;
-    background-color: #fff;
+    background-color: var(--first-color);
     width: 100%;
     z-index: 1;
     display: inline-flex;
@@ -32,21 +41,28 @@ header{
 .navbar a{
     margin-right: 3rem;
     text-decoration: none;
-    color: black;
+    color: var(--five-color);
     font-size: 1rem;
     line-height: 24px;
     font-weight: 400;
 }
 
 button{
-    background-color: red;
-    color:#fff;
+    background-color: var(--second-color);
+    color: var(--first-color);
     font-size: 0.87rem;
     height: 2rem;
     width: 5.25rem;
     border: none;
     border-radius:10px;
     margin-bottom: -6px;
+    transition: all .4s ease-in-out;
+}
+
+button:hover{
+    color:var(--second-color);
+    background-color: var(--first-color);
+    border: solid 1.5px var(--second-color);
 }
 
 .img{
@@ -67,7 +83,7 @@ button{
 }
 
 .section1{
-    background-color: #fff;
+    background-color: var(--first-color);
     width: 100%;
     height:  100vh;
     position: relative;
@@ -81,22 +97,28 @@ button{
 
 .content h1{
     font-size: 4rem;
-    color: #000000da;
+    color: var(--third-color);
 }
 
 .content h4{
     font-weight: 300;
-    color: #000000da;
+    color: var(--third-color);
 }
 
 .content button{
     width:10rem;
     height: 3rem;
-    color: #000000da;
-    background-color: #ffbc0d;
+    color: var(--third-color);
+    background-color: var(--four-color);
     border:none;
     border-radius: 10px;
     margin-top: 2rem;
+    transition: all .5s ease-in-out;
+}
+
+.content button:hover{
+    background-color: var(--third-color);
+    color: var(--first-color);
 }
 
 .section2{
@@ -114,23 +136,30 @@ button{
 
 .section2-h1{
     font-size: 2.3rem;
-    color: #000000da;
+    color: var(--third-color);
 }
 
 .section1-p{
     font-size: 1rem;
-    color: #000000da;
+    color: var(--third-color);
     line-height: 1.8rem;
 }
 
 .section2-btn{
     width: 11rem;
     height: 2.5rem;
-    background-color: #ffbc0d;
+    background-color: var(--four-color);
     border: none;
     border-radius: 10px;
     margin-top: 1.5rem;
     font-weight: bold;
+    transition: all .5s ease-in-out;
+}
+
+.section2-btn:hover{
+    color: var(--four-color);
+    background-color: var(--first-color);
+    border: var(--four-color) 1.5px solid;
 }
 
 .section3{
@@ -155,7 +184,7 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--first-color);
 }
 
 .content333 h3{
@@ -179,7 +208,7 @@ footer{
 
 .pp{
     font-weight: bold;
-    color: #000000da;
+    color: var(--third-color);
     margin-bottom: 1rem;
 }
 
@@ -203,7 +232,7 @@ ul>li{
     flex-wrap: wrap;
     align-items: center;
     padding: 3rem 0;
-    border-bottom: solid 1px grey;
+    border-bottom: solid 1px var(--six-color);
 }
 
 .gh>img{
@@ -215,7 +244,7 @@ ul>li{
 }
 
 .up-content-div>ul{
-    color: #767676;
+    color: var(--six-color);
 }
 
 .footer-down{
@@ -223,7 +252,7 @@ ul>li{
     justify-content: space-between;
     align-items: center;
     height: 20%;
-    color: #767676;
+    color: var(--six-color);
 }
 
 .footer-down>div>p{
@@ -240,7 +269,7 @@ ul>li{
     right: 10%;
     top: 10px;
     font-size: 2.8rem;
-    color:#767676;
+    color:var(--six-color);
     cursor: pointer;
     display: none;
 }
@@ -282,7 +311,7 @@ ul>li{
         left: 0;
         width: 100%;
         height: 0;
-        background: white;
+        background: var(--first-color);
         backdrop-filter: blur(50px);
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
         overflow: hidden;
