@@ -24,8 +24,8 @@ header{
     z-index: 1;
     display: inline-flex;
     align-items: flex-end;
-    padding: 1.5rem 10%;
-    box-shadow: 0 0.5rem 1rem #f3f3f3;
+    padding: 1.5rem 7%;
+    box-shadow: 0 0.3rem 1rem #f3f3f3;
 }
 
 .navbtn{
@@ -140,4 +140,43 @@ header{
     border-radius: 10px;
     margin-top: 1.5rem;
     font-weight: bold;
+}
+
+.section3{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 80%;   
+    height: 320px;
+    background: url(https://mcdonalds.com.lb/storage/website-sections/August2019/kmFR0vM2mM71TRbcvPkG.jpg);
+    background-size: cover;
+    display: flex;
+}
+
+.container>div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.content333 h3{
+    font-size: 1.5rem;
+    padding-bottom: .7rem;
+}
+
+.content333 p{
+    font-size: .85rem;
+    padding-bottom: 1rem;
+}
+
+.imgimg img{
+    margin-right: 20px;
 }
