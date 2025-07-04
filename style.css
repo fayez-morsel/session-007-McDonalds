@@ -1,12 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body{
     position: relative;
-    width: 100vw;
+    width: calc(100vw - 17px);
+    height: 100%;
 }
 
 header{
@@ -18,31 +23,22 @@ header{
     width: 100%;
     z-index: 1;
     display: inline-flex;
-    align-items: flex-end;
-    padding: 1.5rem 10%;
-    box-shadow: 0 0.5rem 1rem #f3f3f3;
-}
-
-.navbtn{
-    display: inline-flex;
-    width: 100%;
-    height: 2rem;
     justify-content: space-between;
     align-items: flex-end;
-    padding-left:2rem;
-
+    padding: 1.5rem 7%;
+    box-shadow: 0 0.3rem 1rem #f3f3f3;
 }
 
-.navbtn nav a{
+.navbar a{
     margin-right: 3rem;
     text-decoration: none;
     color: black;
-    font-size: 1.15rem;
+    font-size: 1rem;
     line-height: 24px;
     font-weight: 400;
 }
 
-.navbtn button{
+button{
     background-color: red;
     color:#fff;
     font-size: 0.87rem;
@@ -53,4 +49,300 @@ header{
     margin-bottom: -6px;
 }
 
+.img{
+    width: 80%;
+    height: 75%;
+    background: url(burgerimg.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
 
+}
+
+.section1{
+    background-color: #fff;
+    width: 100%;
+    height:  100vh;
+    position: relative;
+    
+}
+
+.content{
+    height: 80%;
+    padding-top: 5rem;
+}
+
+.content h1{
+    font-size: 4rem;
+    color: #000000da;
+}
+
+.content h4{
+    font-weight: 300;
+    color: #000000da;
+}
+
+.content button{
+    width:10rem;
+    height: 3rem;
+    color: #000000da;
+    background-color: #ffbc0d;
+    border:none;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.section2{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img1{
+    width: 530px;
+    height: 292px;
+}
+
+.section2-h1{
+    font-size: 2.3rem;
+    color: #000000da;
+}
+
+.section1-p{
+    font-size: 1rem;
+    color: #000000da;
+    line-height: 1.8rem;
+}
+
+.section2-btn{
+    width: 11rem;
+    height: 2.5rem;
+    background-color: #ffbc0d;
+    border: none;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+
+.section3{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 80%;   
+    height: 320px;
+    background: url(https://mcdonalds.com.lb/storage/website-sections/August2019/kmFR0vM2mM71TRbcvPkG.jpg);
+    background-size: cover;
+    display: flex;
+}
+
+.container>div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.content333 h3{
+    font-size: 1.5rem;
+    padding-bottom: .7rem;
+}
+
+.content333 p{
+    font-size: .85rem;
+    padding-bottom: 1rem;
+}
+
+.imgimg img{
+    margin-right: 20px;
+}
+
+footer{
+    height: 80vh;
+    padding: 1.75rem 6rem;
+}
+
+.pp{
+    font-weight: bold;
+    color: #000000da;
+    margin-bottom: 1rem;
+}
+
+.up-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.up-content-div{
+    width: 208px;
+}
+
+ul>li{
+    list-style: none;
+}
+
+.up-img{
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 3rem 0;
+    border-bottom: solid 1px grey;
+}
+
+.gh>img{
+    margin-right: 4rem;
+}
+
+.ght>img{
+    margin-right: 1rem;
+}
+
+.up-content-div>ul{
+    color: #767676;
+}
+
+.footer-down{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    color: #767676;
+}
+
+.footer-down>div>p{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#check{
+    display: none;
+}
+
+.icons{
+    position: absolute;
+    right: 10%;
+    top: 10px;
+    font-size: 2.8rem;
+    color:#767676;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:1200px){
+    .logo>img{
+        width: 45px;
+        height: 45px;
+        padding-top: 10px;
+    }
+
+    header{
+        height: 80px;
+        padding: 1.5rem 10%;
+    }
+    .navbtn{
+        display: none;
+    }
+
+     .icons{
+        display: inline-flex;
+    }
+
+    .icons #close-icon{
+        display: none;
+    }
+
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: white;
+        backdrop-filter: blur(50px);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+    
+    #check:checked~.navbar{
+        height: 19.5rem;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transition: 0.3 ease;
+    }
+
+    .content h1{
+        font-size: 3rem;
+    }
+
+    .content h4{
+        font-size: .9rem;
+    }
+
+    .img1{
+        width: 450px;
+    }
+
+    .section2{
+        gap: 40px;
+    }
+
+    .section2-h1{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:1000px){
+    .section2{
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+
+    .none{
+        position: absolute;
+        top: -100%;
+    }
+
+    .container{
+        justify-content: center;
+    }
+
+    #content333{
+        width: 330px;
+    }
+
+    .gh{
+        margin-right: -35px;
+    }
+}
